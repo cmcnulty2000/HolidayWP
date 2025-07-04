@@ -1,0 +1,134 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.holidayCard {
+  background-color: $ms-color-white;
+  border: 1px solid $ms-color-neutralLight;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: $ms-color-themePrimary;
+    transform: translateY(-2px);
+  }
+  
+  &.small {
+    min-height: 120px;
+  }
+  
+  &.medium {
+    min-height: 200px;
+  }
+  
+  &.noHoliday {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: dashed;
+    border-color: $ms-color-neutralTertiary;
+    background-color: $ms-color-neutralLighterAlt;
+  }
+}
+
+.content {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: $ms-color-neutralLighterAlt;
+}
+
+.holidayImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.title {
+  color: $ms-color-neutralPrimary;
+  font-weight: $ms-font-weight-semibold;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.date {
+  color: $ms-color-neutralSecondary;
+  margin: 0;
+}
+
+.countdown {
+  color: $ms-color-themePrimary;
+  font-weight: $ms-font-weight-semibold;
+  margin: 0;
+}
+
+.clickHint {
+  color: $ms-color-neutralTertiary;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: $ms-font-size-xs;
+  font-weight: $ms-font-weight-semibold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  
+  &.public {
+    background-color: rgba(16, 204, 82, 0.1);
+    color: #10cc52;
+  }
+  
+  &.company {
+    background-color: rgba(0, 120, 212, 0.1);
+    color: #0078d4;
+  }
+  
+  &.optional {
+    background-color: rgba(255, 140, 0, 0.1);
+    color: #ff8c00;
+  }
+  
+  &.religious {
+    background-color: rgba(164, 38, 44, 0.1);
+    color: #a4262c;
+  }
+}
+
+.icon {
+  font-size: 24px;
+  color: $ms-color-neutralTertiary;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: $ms-color-neutralSecondary;
+  margin: 0;
+}
