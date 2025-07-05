@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "packageManager": "npm",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.16.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "q",
+    "libraryId": "384ed261-3f1e-4470-b89d-1de64855b89e",
+    "environment": "spo",
+    "solutionName": "q",
+    "solutionShortDescription": "q description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
